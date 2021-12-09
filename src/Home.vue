@@ -46,6 +46,9 @@ export default class Home extends Vue {
   nodeUrl = 'https://node.zkopru.network/'
   async mounted() {
     await this.loadLatestBlock()
+    setInterval(() => {
+      this.loadLatestBlock()
+    }, 30000)
   }
 
   async loadLatestBlock() {
