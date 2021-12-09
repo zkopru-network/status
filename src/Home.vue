@@ -9,7 +9,7 @@
     <div style="margin-left: 8px">
       - {{ latestBlock.body.txs.length }} transaction{{ latestBlock.body.txs.length === 1 ? '' : 's' }}
       <br />
-      - {{ latestBlock.body.massDeposits.length }} mass deposit{{ latestBlock.body.txs.length === 1 ? '' : 's' }}
+      - {{ latestBlock.body.massDeposits.length }} mass deposit{{ latestBlock.body.massDeposits.length === 1 ? '' : 's' }}
     </div>
     <div>
       Proposed: {{ dayjs().to(dayjs(1000 * +latestBlock.timestamp)) }}
